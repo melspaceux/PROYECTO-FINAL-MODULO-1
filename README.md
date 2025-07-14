@@ -32,4 +32,4 @@ Puedes encontrarme en:
 Gracias por visitar mi portafolio.
 
 ## como ver el proyecto desplegado en la web
-[ingresa aqui](https://melspaceux.github.io/PROYECTO-FINAL-MODULO-1/)
+[ingresa aqui](https://melspaceux.github.io/PROYECTO-FINAL-MODULO-1/)# modulo-2-1ra-parte
