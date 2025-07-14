@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio de Melani</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
     <main>
         <section>
             <h2>Sobre mí</h2>
-            <img width="200px" src="https://i.pinimg.com/736x/55/a2/a0/55a2a06076ca732ba917848422c3c42d.jpg" alt="caricatura de Melani">
+            <img id="foto-de-perfil" src="https://i.pinimg.com/736x/55/a2/a0/55a2a06076ca732ba917848422c3c42d.jpg"
+                alt="caricatura de Melani">
             <p>Hola, soy <strong>Melani Padilla</strong>. Apasionada por el área de tecnología, me encanta aprender
                 cosas nuevas y compartir conocimiento. Actualmente participo como voluntaria en varias organizaciones y
                 soy diseñadora UX junior.</p>
@@ -63,7 +65,8 @@
 
         <section>
             <h2>Mi imagen favorita</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVTX_p85yus1Q3PbPWFtSSihE9GnEKS8o0w&s" alt="Panda saludando" width="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVTX_p85yus1Q3PbPWFtSSihE9GnEKS8o0w&s"
+                alt="Panda saludando" width="300">
         </section>
 
         <section>
@@ -83,10 +86,15 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="contacto">
         <h2>Conecta conmigo</h2>
-        <a href="https://www.instagram.com/itsmel.ok/"><img width="40px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hT13emx6IzuIP9oQh1-L-fV5UhB-BRaThQ&s"></a>
-        <a href="www.linkedin.com/in/melanipadilla"><img width="60px" src="data:image/png;base64,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" alt="logo linkedin"></a>
+        <div class="redes-sociales"> 
+            <a class="redes-sociales-instagram" href="https://www.instagram.com/itsmel.ok/"><img width="40px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hT13emx6IzuIP9oQh1-L-fV5UhB-BRaThQ&s"></a>
+            <a class="redes-sociales-linkedin" href="www.linkedin.com/in/melanipadilla"><img width="60px"
+                    src="data:image/png;base64,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" alt="logo linkedin"></a>
+        </div>
+
     </footer>
 
 </body>
