@@ -1,11 +1,40 @@
 h2 {
     color: cornflowerblue;
     background-color: rgb(220, 217, 217);
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.habilidades-tecnicas {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(21, 21, 20);
+.main-header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: white;
+    color: #f97777;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.skills-list li:hover {
+    background-color: #ffeaea;
 }
 
 body {
@@ -21,7 +50,6 @@ body {
 
 #foto-de-perfil:hover {
     scale: 1.05;
-
 }
 
 .contacto {
@@ -40,7 +68,18 @@ img:hover {
 }
 
 .redes-sociales {
-    background-color: teal;
-    border: 3px solid rgb(2, 8, 12);
+    background-color: #2c3e50;
+    border: 3px solid #34495e;
     margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.redes-sociales a {
+    display: flex;
+    align-items: center;
 }
