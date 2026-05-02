@@ -83,3 +83,33 @@ img:hover {
     display: flex;
     align-items: center;
 }
+
+/* Estilos para la sección de Flexbox */
+.flex-valores {
+    display: flex;
+    flex-wrap: wrap; /* Distribuir en múltiples líneas */
+    justify-content: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical al centro */
+    align-content: space-around; /* Distribución de múltiples líneas */
+    gap: 15px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 250px;
+    border: 2px solid #ccc;
+}
+
+.valor-item {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    width: 130px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.valor-especial {
+    align-self: flex-end; /* Alineación específica de este elemento */
+    background-color: #e83e8c; /* Color diferente para destacar */
+}
