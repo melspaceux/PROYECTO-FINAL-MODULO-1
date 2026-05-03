@@ -84,13 +84,13 @@ img:hover {
     align-items: center;
 }
 
-/* Estilos para la sección de Flexbox */
+
 .flex-valores {
     display: flex;
-    flex-wrap: wrap; /* Distribuir en múltiples líneas */
-    justify-content: center; /* Alineación horizontal centrada */
-    align-items: center; /* Alineación vertical al centro */
-    align-content: space-around; /* Distribución de múltiples líneas */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
     gap: 15px;
     background-color: #f4f4f4;
     padding: 20px;
@@ -110,6 +110,142 @@ img:hover {
 }
 
 .valor-especial {
-    align-self: flex-end; /* Alineación específica de este elemento */
-    background-color: #e83e8c; /* Color diferente para destacar */
+    align-self: flex-end;
+    background-color: #e83e8c;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: cornflowerblue;
+}
+
+.login-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+
+.cookie-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+    border-top: 2px solid #4caf50;
+}
+
+.cookie-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.cookie-footer a {
+    color: #4caf50;
+}
+
+.cookie-accept {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cookie-accept:hover {
+    background-color: #45a049;
+}
+
+
+.card-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card-horizontal:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-description {
+    flex: 1;
+}
+
+.card-description h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .card-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .cookie-footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }
